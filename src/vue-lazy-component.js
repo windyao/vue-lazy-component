@@ -16,7 +16,7 @@ export default function install (Vue, options = {}) {
     const FragmentFactory = Vue.FragmentFactory;
     const { createAnchor, replace } = Vue.util;
 
-    Vue.directive(options.name || 'lazy', {
+    Vue.directive(options.name || 'defer', {
         terminal: true,
 
         bind () {
